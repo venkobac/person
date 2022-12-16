@@ -22,6 +22,7 @@ public class PersonController {
 	
 	@PostMapping("/save")   // restfull web services
 	public Person savePerson(@RequestBody Person person) {
+		System.out.println("Inside the save person");
 		return personService.savePerson(person);
 	}
 	@GetMapping("/get")
